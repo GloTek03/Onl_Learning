@@ -1,0 +1,54 @@
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // đổ bóng nhẹ
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px); // nổi lên khi hover
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); // đổ bóng đậm hơn
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .card-body {
+    padding: 1rem;
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  }
+
+  .list-group-item {
+    font-size: 0.9rem;
+    background-color: #fafafa;
+
+    strong {
+      color: #333;
+    }
+  }
+}
+
+// Tùy chỉnh phần tiêu đề trang
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #666;
+  font-size: 1rem;
+}

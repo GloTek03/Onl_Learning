@@ -13,6 +13,6 @@ export class MasterService {
   constructor(private http : HttpClient) { }
 
   getAllCourses() : Observable<IApiResponse>{
-     return this.http.get<IApiResponse>(`${this.apiUrl}GetAllCourses`);
+     return this.http.get<IApiResponse>(`${this.apiUrl}GetAllCourse`);
   }
 }
